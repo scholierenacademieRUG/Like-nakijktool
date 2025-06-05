@@ -23,6 +23,12 @@ body {
 	background-color: var(--color-bg-0);
 }
 
+@media print {
+	body { 
+		background-color: white;
+	}
+}
+
 h1,
 h2,
 p {
