@@ -321,6 +321,7 @@ button {
 .post-body {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .post-body button {
