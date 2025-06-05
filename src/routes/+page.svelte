@@ -223,6 +223,15 @@
 		img{
 			max-height: 200px !important;
 		}
+
+        .comment {
+            color: black !important;
+            background-color: white !important;
+        }
+
+        .comment-username {
+            color:black !important;
+        }
 	}
 
 
