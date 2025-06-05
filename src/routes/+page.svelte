@@ -157,7 +157,7 @@
 					{/each}
 				</select> <br/> {/if}
 			</div>
-			<div class="post-body"> <center>
+			<div class="post-body">
 					{#if photo == null}
 						<div class="imagePicker">
 						{#each data[selected].contentItems.filter( item => item.type == 'photo') as item}
@@ -168,7 +168,6 @@
 						<img src={photo.value} alt="foto bij post van {selected}"><br>
 						{#if showSelection} <button onclick={() => photo = null}>kies andere foto</button> {/if}
 					{/if}
-				</center>
 				<p> 
 					{#if showSelection}<select bind:value={text}>
 						<option value={null} selected> Kies een text</option>
@@ -194,7 +193,7 @@
 			</div>
 		</div>
 		{#if likes}
-			<div><button onclick={reset}>Wis post</button><button onclick={() => window.print() }>Print post</button><button onclick={() => showSelection = !showSelection}> {#if showSelection } Verberg {:else} Toon {/if} bewerk knoppen</button>  </div>
+			<div style="display:flex"><button onclick={reset}>Wis post</button><button onclick={() => window.print() }>Print post</button><button onclick={() => showSelection = !showSelection}> {#if showSelection } Verberg {:else} Toon {/if} bewerk knoppen</button>  </div>
 		{/if}
 		{/if}
 	
@@ -317,6 +316,18 @@ button {
 .post-title {
     font-weight: normal;
     font-family: verdana;
+}
+
+.post-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-body button {
+    width: fit-content;
+    padding-inline: 1rem;
+    align-self: center;
+    margin-block: 0;
 }
 
 .post-body p {
