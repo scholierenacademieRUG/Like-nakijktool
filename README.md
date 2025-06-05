@@ -1,3 +1,8 @@
+# note van Jelle
+Het oude Like! portaal werdt niet gebruikt. In 2025 hebben we besloten om dit pakket op werkbladen te zetten. 
+Dit is de nakijktool die de docent kan gebruiken in de klas.
+In een paar uurtjes is deze simpele statische app gemaakt, met veel content van de oude app.
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
